@@ -1,0 +1,14 @@
+{
+  "name": "bbc-uk",
+  "version": "0.1",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [ "*://*.bbc.co.uk/*" ],
+      "js": [ "content.js" ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [ "content.js" ],
+  "permissions": [ "<all_urls>" ]
+}
